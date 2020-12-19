@@ -1,0 +1,105 @@
+<h2>L'id charger est : {{myParam}}</h2>
+
+<ng-container [ngSwitch]="myParam">
+    <ng-container *ngSwitchCase="1">
+        <div class="container">
+            <h1 class="display-3">Mini tutoriel Angular 10</h1>
+            <img src="../../../assets/images/angular.png" class="img-fluid text-center" alt="angular10">
+
+            <p> Tout d'abord, Angular est un Framework open source écrit en Javascript conçu par Google qui permet le
+                développement d'applications Web, notamment les single page application. Le framework est basé sur une
+                architecture de type MVC (Model View Controller), de sorte que les données, l’affichage et les
+                opérations peuvent être séparés pour mieux gérer les responsabilités ce qui permet une maintenabilité
+                accrue et améliore la coopération. </p>
+            <p>
+                En effet, une application angulaire possède 2 objets parents; un objet de type Module et un de type
+                Composant.
+            </p>
+
+            <ul>
+                <li>Module &rArr; Tour de controle qui permet de gérer les composants. <i
+                        class="fas fa-broadcast-tower"></i></li>
+                <li>Composant &rArr; En gros, une page constitué de code HTML, Typescript et CSS. <i
+                        class="far fa-file"></i> </li>
+            </ul>
+
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="2">
+        <div class="container">
+            <h1 class="display-3">Mini tutoriel Crud</h1>
+            <img src="../../../assets/images/crud.png" alt="">
+            <p>L'acronyme informatique CRUD (Create Read Update Delete) est utilisé pour désigner les quatre opérations
+                de base de manipulation de base de données. Autrement dit :</p>
+            <ul>
+                <li>Céer</li>
+                <li>Lire</li>
+                <li>Mettre à jour</li>
+                <li>Supprimer</li>
+            </ul>
+
+            <p>Chaque composant du CRUD peut être associé à des types de requête SQL et méthodes HTTP.</p>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Commande</th>
+                        <th scope="col">SQL</th>
+                        <th scope="col">HTTP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Create</td>
+                        <td>INSERT</td>
+                        <td>POST</td>
+                    </tr>
+                    <tr>
+                        <td>Read</td>
+                        <td>SELECT</td>
+                        <td>GET</td>
+                    </tr>
+                    <tr>
+                        <td>Update</td>
+                        <td>UPDATE</td>
+                        <td>PUT</td>
+                    </tr>
+                    <tr>
+                        <td>Delete</td>
+                        <td>DELETE</td>
+                        <td>DELETE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="3">
+        <div class="container">
+            <h1>Mini tutoriel relations entre objets</h1>
+            <img src="../../../assets/images/relations.jpg" alt="">
+            <p>Il existe 5 relation de base entre objets </p>
+            <ol>
+                <li>Association</li>
+                <li>Agrégation</li>
+                <li>Composition</li>
+                <li>Heritage</li>
+                <li>Interface (implements)</li>
+            </ol>
+
+            <p>L'association signifie une relation sémantique.Il est persistant entre les deux classes.</p>
+            <p>L' agrégation est un cas spécifique d’association non
+                symétrique exprimant une relation de contenance entre les deux classes.</p>
+            <p>La composition est une agrégation plus forte, ce qui signifie que les éléments ne peuvent appartenir qu'à
+                une seule relation de composition</p>
+
+            <p>L'héritage, c'est des sous-classes qui vont hériter des propriétés d'une superclasse</p>
+
+            <p>L'interface définit la relation contractuelle garantie par la classe d'implémentaion dans laquelle la classe implémentée doit respecter certaines conditions.</p>
+
+        </div>
+    </ng-container>
+
+    <ng-container *ngSwitchDefault>
+
+    </ng-container>
+</ng-container>

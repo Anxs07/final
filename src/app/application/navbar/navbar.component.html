@@ -1,0 +1,60 @@
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-dark ">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <i class="fas fa-child text-warning fa-2x"> Bel</i>
+            </a>
+
+            <button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="nav1">
+                <ul class="navbar-nav align-self-end">
+
+                    <li class="nav-item">
+                        <a routerLink="home"
+                            class="nav-link font-weight-bold text-capitalize text-warning px-3">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown" data-toggle="dropdown">
+                        <a
+                            class="nav-link font-weight-bold text-capitalize text-warning dropdown-toggle px-3">Tutoriels</a>
+                        <div class="dropdown-menu">
+                            <a [routerLink]="['/tutoriel', 1]" class="dropdown-item">Mini tutoriel Angular 10</a>
+                            <a [routerLink]="['/tutoriel', 2]" class="dropdown-item">Mini tutoriel Crud</a>
+                            <a [routerLink]="['/tutoriel', 3]" class="dropdown-item">Mini tutoriel relations</a>
+                            <a [routerLink]="['/tutoriel', 4]" class="dropdown-item">Mini tutoriel</a>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a routerLink="formulaire"
+                            class="nav-link font-weight-bold text-capitalize text-warning px-3">Formulaire</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a [routerLink]="['/crud']"
+                            class="nav-link font-weight-bold text-capitalize text-warning px-3">Crud</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a [routerLink]="['/fun']"
+                            class="nav-link font-weight-bold text-capitalize text-warning px-3">Fun</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a [routerLink]="['/contact']"
+                            class="nav-link font-weight-bold text-capitalize text-warning px-3">Contact</a>
+                    </li>
+                </ul>
+                
+                <a href="https://github.com/Anxs07/final" class="d-none d-sm-block"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2000;"
+                        src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png" alt="Fork me on GitHub"
+                        data-canonical-src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png"></a>
+            </div>
+        </div>
+    </nav>
+</header>

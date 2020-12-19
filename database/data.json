@@ -1,0 +1,22 @@
+{
+  "api": [
+    {
+      "name": "emental",
+      "email": "asd",
+      "phone": "4526",
+      "model": "Lamborghini Aventador",
+      "color": "white",
+      "date": "2006-12-12",
+      "id": 2
+    },
+    {
+      "name": "Ragnar",
+      "email": "321",
+      "phone": "rag",
+      "model": "Lamborghini Aventador",
+      "color": "black",
+      "date": "2019-11-30",
+      "id": 3
+    }
+  ]
+}
