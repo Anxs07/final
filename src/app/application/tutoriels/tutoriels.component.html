@@ -1,10 +1,9 @@
-<h2>L'id charger est : {{myParam}}</h2>
 
 <ng-container [ngSwitch]="myParam">
     <ng-container *ngSwitchCase="1">
         <div class="container">
             <h1 class="display-3">Mini tutoriel Angular 10</h1>
-            <img src="../../../assets/images/angular.png" class="img-fluid text-center" alt="angular10">
+            <img [src]= "['../../../assets/images/angular.png']" class="img-fluid text-center" alt="angular10">
 
             <p> Tout d'abord, Angular est un Framework open source écrit en Javascript conçu par Google qui permet le
                 développement d'applications Web, notamment les single page application. Le framework est basé sur une
@@ -28,7 +27,7 @@
     <ng-container *ngSwitchCase="2">
         <div class="container">
             <h1 class="display-3">Mini tutoriel Crud</h1>
-            <img src="../../../assets/images/crud.png" alt="">
+            <img [src]="['../../../assets/images/crud.png']" alt="">
             <p>L'acronyme informatique CRUD (Create Read Update Delete) est utilisé pour désigner les quatre opérations
                 de base de manipulation de base de données. Autrement dit :</p>
             <ul>
@@ -76,7 +75,7 @@
     <ng-container *ngSwitchCase="3">
         <div class="container">
             <h1>Mini tutoriel relations entre objets</h1>
-            <img src="../../../assets/images/relations.jpg" alt="">
+            <img [src]="['../../../assets/images/relations.jpg']" alt="">
             <p>Il existe 5 relation de base entre objets </p>
             <ol>
                 <li>Association</li>
